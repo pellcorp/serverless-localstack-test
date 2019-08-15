@@ -1,0 +1,7 @@
+{
+  "name": "test-serverless",
+  "version": "1.0.0",
+  "devDependencies": {
+    "serverless-localstack": "^0.4.17"
+  }
+}

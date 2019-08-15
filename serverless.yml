@@ -1,0 +1,19 @@
+service: test-serverless
+
+plugins:
+  - serverless-localstack
+
+custom:
+  localstack:
+    host: http://localhost
+    stages:
+      - dev
+    debug: true
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+
+functions:
+  helloWorld:
+    handler: handler.helloWorldHandler
